@@ -18,7 +18,7 @@ python DA_Finder.py -u http://url.com/ -f filename.txt -t d
 # Parâmentros
 
 ```
-<bold>-u</bold> | <bold>--url</bold> - Url, obrigatório uso de / no final da url.
+***-u*** | <bold>--url</bold> - Url, obrigatório uso de / no final da url.
 ```
 
 ```

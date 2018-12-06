@@ -18,15 +18,15 @@ python DA_Finder.py -u http://url.com/ -f filename.txt -t d
 # Parâmentros
 
 ```
--u | --url - Url, obrigatório uso de / no final da url.
+<bold>-u</bold> | <bold>--url</bold> - Url, obrigatório uso de / no final da url.
 ```
 
 ```
--f | --file - Arquivo, nome da wordlist a ser usada.
+<bold>-f</bold> | <bold>--file</bold> - Arquivo, nome da wordlist a ser usada.
 ```
 
 ```
--t | --type - Tipo de scan, "d" para diretórios ou "a" para arquivos
+<bold>-t</bold> | <bold>--type</bold> - Tipo de scan, "d" para diretórios ou "a" para arquivos
 ```
 
 

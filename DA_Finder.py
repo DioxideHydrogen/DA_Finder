@@ -2,6 +2,11 @@
 import requests
 import argparse
 
+print "[+] Professor James Bath [+]"
+print "Ajude-me doando uma moedinha :-)"
+print "Carteira BTC: 1BQoLPnfUVqvQk7gS3Ko787zEMVGK4uFNP"
+print ""
+
 usage = ''': python %(prog)s [-h url] [-f file] [-t type]'''
 da = argparse.ArgumentParser(usage=usage)
 da.add_argument("-u", "--url", type=str, help="", dest="host")

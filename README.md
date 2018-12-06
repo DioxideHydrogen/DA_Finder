@@ -34,7 +34,9 @@ python DA_Finder.py -u http://url.com/ -f filename.txt -t d
 
 ![Bitcoin Wallet Professor James Bach](https://i.imgur.com/YV7QHVE.jpg)
 
-Ou: 1BQoLPnfUVqvQk7gS3Ko787zEMVGK4uFNP
+<img src="https://i.imgur.com/YV7QHVE.jpg" width="200" height="200"/>
+
+<center>Ou: 1BQoLPnfUVqvQk7gS3Ko787zEMVGK4uFNP</center>
 
 
 Thank you, next.

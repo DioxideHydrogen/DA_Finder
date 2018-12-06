@@ -2,11 +2,6 @@
 import requests
 import argparse
 
-print "[+] Professor James Bath [+]"
-print "Ajude-me doando uma moedinha :-)"
-print "Carteira BTC: 1BQoLPnfUVqvQk7gS3Ko787zEMVGK4uFNP"
-print ""
-
 usage = ''': python %(prog)s [-h url] [-f file] [-t type]'''
 da = argparse.ArgumentParser(usage=usage)
 da.add_argument("-u", "--url", type=str, help="", dest="host")
@@ -18,6 +13,10 @@ url = args.host  # URL a ser testada
 tipo = args.type
 
 try:
+    print '[+] Professor James Bath [+]'
+    print 'Ajude-me doando uma moedinha :-)'
+    print 'Carteira BTC: 1BQoLPnfUVqvQk7gS3Ko787zEMVGK4uFNP'
+    print '\n'
     arquivo = open(args.wordlist, "r")  # ARQUIVO com a wordlist
     # Verificação se a última linha da wordlist está com \n no final
     # size = arquivo.readlines()
@@ -49,11 +48,11 @@ if __name__ == '__main__':
             request = requests.get(link, timeout=3)
             status = request.status_code
             if status == 200:
-                print "[+] Destino existente: " + link + " | STATUS: " + str(status) + '\n'
+                print "[+] Destino existente: " + link + " | STATUS: " + str(status)
             elif status == 403:
-                print "[%] Destino privado: " + link + " | STATUS: " + str(status)  + '\n'
+                print "[%] Destino privado: " + link + " | STATUS: " + str(status)
             else:
-                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status)  + '\n'
+                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status)
     elif tipo == "A" or tipo == "a" or tipo == "archives" or tipo == "ARCHIVES":
         print '''\n
         				=========+SCANEANDO ARQUIVOS+========
@@ -64,11 +63,11 @@ if __name__ == '__main__':
             request = requests.get(link, timeout=3)
             status = request.status_code
             if status == 200:
-                print "[+] Destino existente: " + link + " | STATUS: " + str(status) + '\n'
+                print "[+] Destino existente: " + link + " | STATUS: " + str(status)
             elif status == 403:
-                print "[%] Destino privado: " + link + " | STATUS: " + str(status) + '\n'
+                print "[%] Destino privado: " + link + " | STATUS: " + str(status)
             else:
-                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status) + '\n'
+                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status)
     else:
         print '[!] Escolha um tipo de teste'
 

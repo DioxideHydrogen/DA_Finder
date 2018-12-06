@@ -49,11 +49,11 @@ if __name__ == '__main__':
             request = requests.get(link, timeout=3)
             status = request.status_code
             if status == 200:
-                print "[+] Destino existente: " + link + " | STATUS: " + str(status)
+                print "[+] Destino existente: " + link + " | STATUS: " + str(status) + '\n'
             elif status == 403:
-                print "[%] Destino privado: " + link + " | STATUS: " + str(status)
+                print "[%] Destino privado: " + link + " | STATUS: " + str(status)  + '\n'
             else:
-                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status)
+                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status)  + '\n'
     elif tipo == "A" or tipo == "a" or tipo == "archives" or tipo == "ARCHIVES":
         print '''\n
         				=========+SCANEANDO ARQUIVOS+========
@@ -64,11 +64,11 @@ if __name__ == '__main__':
             request = requests.get(link, timeout=3)
             status = request.status_code
             if status == 200:
-                print "[+] Destino existente: " + link + " | STATUS: " + str(status)
+                print "[+] Destino existente: " + link + " | STATUS: " + str(status) + '\n'
             elif status == 403:
-                print "[%] Destino privado: " + link + " | STATUS: " + str(status)
+                print "[%] Destino privado: " + link + " | STATUS: " + str(status) + '\n'
             else:
-                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status)
+                print "[-] Destino inexistente: " + link + " | STATUS: " + str(status) + '\n'
     else:
         print '[!] Escolha um tipo de teste'
 

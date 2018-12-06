@@ -5,19 +5,30 @@ Um script para encontrar diretórios e arquivos baseados em uma wordlist.
 
 Simplesmente o comando:
 
+```
 git clone https://github.com/ProfessorJamesBach/DA_Finder
+```
 
 # Como usar
 
+```
 python DA_Finder.py -u http://url.com/ -f filename.txt -t d 
+```
 
 # Parâmentros
 
+```
 -u | --url - Url, obrigatório uso de / no final da url.
+```
 
+```
 -f | --file - Arquivo, nome da wordlist a ser usada.
+```
 
+```
 -t | --type - Tipo de scan, "d" para diretórios ou "a" para arquivos
+```
+
 
 # Carteira BTC:
 
@@ -26,4 +37,4 @@ python DA_Finder.py -u http://url.com/ -f filename.txt -t d
 Ou: 1BQoLPnfUVqvQk7gS3Ko787zEMVGK4uFNP
 
 
-- Thank you, next.
+Thank you, next.

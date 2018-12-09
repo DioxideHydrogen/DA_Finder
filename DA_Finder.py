@@ -2,7 +2,7 @@
 import requests
 import argparse
 
-usage = ''': python %(prog)s [-h url] [-f file] [-t type]'''
+usage = ''': python %(prog)s [-u url] [-f file] [-t type]'''
 da = argparse.ArgumentParser(usage=usage)
 da.add_argument("-u", "--url", type=str, help="", dest="host")
 da.add_argument("-f", "--file", type=str, help="", dest="wordlist")

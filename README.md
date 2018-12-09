@@ -15,7 +15,7 @@ git clone https://github.com/ProfessorJamesBach/DA_Finder
 python DA_Finder.py -u http://url.com/ -f filename.txt -t d 
 ```
 
-# Parâmentros
+# Parâmetros
 
 ```
 -u | --url - Url, obrigatório uso de / no final da url.
